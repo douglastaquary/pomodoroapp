@@ -1,0 +1,780 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PomodoroViewControllerDelegate"
+- "PomodoroViewController"
+provides-nominal:
+- "P11PomodoroApp30PomodoroViewControllerDelegate"
+- "C11PomodoroApp22PomodoroViewController"
+provides-member:
+- ["P11PomodoroApp30PomodoroViewControllerDelegate", ""]
+- ["C11PomodoroApp22PomodoroViewController", ""]
+- ["C11PomodoroApp22PomodoroViewController", "viewDidLoad"]
+- ["C11PomodoroApp22PomodoroViewController", "savePomodoro"]
+- ["C11PomodoroApp22PomodoroViewController", "tapStartButton"]
+- ["C11PomodoroApp22PomodoroViewController", "counter"]
+- ["C11PomodoroApp22PomodoroViewController", "timeString"]
+provides-dynamic-lookup:
+- "count"
+- "counter"
+- "counting"
+- "pomodoroImageView"
+- "startButton"
+- "tapStartButton"
+- "timeString"
+- "timer"
+- "timerLabel"
+- "viewDidLoad"
+depends-top-level:
+- !private "!"
+- !private "%"
+- !private "-="
+- !private "/"
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Int"
+- "Pomodoro"
+- "PomodoroService"
+- "PomodoroViewController"
+- "PomodoroViewControllerDelegate"
+- "Sample"
+- "String"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "Timer"
+- "UIButton"
+- "UIImageView"
+- "UILabel"
+- "UIViewController"
+- !private "print"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "Int"]
+- ["Ps9AnyObject", "PomodoroService"]
+- !private ["Ps9AnyObject", "PomodoroViewController"]
+- !private ["Ps9AnyObject", "Sample"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "TimeInterval"]
+- ["Ps9AnyObject", "Timer"]
+- !private ["Ps9AnyObject", "addTarget"]
+- !private ["Ps9AnyObject", "count"]
+- !private ["Ps9AnyObject", "counter"]
+- !private ["Ps9AnyObject", "counting"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "invalidate"]
+- !private ["Ps9AnyObject", "pomodoroService"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "savePomodoro"]
+- !private ["Ps9AnyObject", "scheduledTimer"]
+- !private ["Ps9AnyObject", "setTitle"]
+- !private ["Ps9AnyObject", "startButton"]
+- !private ["Ps9AnyObject", "tapStartButton"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "timeString"]
+- !private ["Ps9AnyObject", "timer"]
+- !private ["Ps9AnyObject", "timerLabel"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "addTarget"]
+- !private ["PSo15CALayerDelegate", "setTitle"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "Int"]
+- ["Ps7CVarArg", "PomodoroService"]
+- !private ["Ps7CVarArg", "PomodoroViewController"]
+- !private ["Ps7CVarArg", "Sample"]
+- !private ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "TimeInterval"]
+- ["Ps7CVarArg", "Timer"]
+- !private ["Ps7CVarArg", "addTarget"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "counter"]
+- !private ["Ps7CVarArg", "counting"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "invalidate"]
+- !private ["Ps7CVarArg", "pomodoroService"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "savePomodoro"]
+- !private ["Ps7CVarArg", "scheduledTimer"]
+- !private ["Ps7CVarArg", "setTitle"]
+- !private ["Ps7CVarArg", "startButton"]
+- !private ["Ps7CVarArg", "tapStartButton"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "timeString"]
+- !private ["Ps7CVarArg", "timer"]
+- !private ["Ps7CVarArg", "timerLabel"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- ["Ps28CustomDebugStringConvertible", "PomodoroService"]
+- !private ["Ps28CustomDebugStringConvertible", "PomodoroViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "Sample"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "TimeInterval"]
+- ["Ps28CustomDebugStringConvertible", "Timer"]
+- !private ["Ps28CustomDebugStringConvertible", "addTarget"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "counter"]
+- !private ["Ps28CustomDebugStringConvertible", "counting"]
+- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "invalidate"]
+- !private ["Ps28CustomDebugStringConvertible", "pomodoroService"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "savePomodoro"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "startButton"]
+- !private ["Ps28CustomDebugStringConvertible", "tapStartButton"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "timeString"]
+- !private ["Ps28CustomDebugStringConvertible", "timer"]
+- !private ["Ps28CustomDebugStringConvertible", "timerLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "debugDescription"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- ["Ps23CustomStringConvertible", "PomodoroService"]
+- !private ["Ps23CustomStringConvertible", "PomodoroViewController"]
+- !private ["Ps23CustomStringConvertible", "Sample"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "TimeInterval"]
+- ["Ps23CustomStringConvertible", "Timer"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addTarget"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "counter"]
+- !private ["Ps23CustomStringConvertible", "counting"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "invalidate"]
+- !private ["Ps23CustomStringConvertible", "pomodoroService"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "savePomodoro"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimer"]
+- !private ["Ps23CustomStringConvertible", "setTitle"]
+- !private ["Ps23CustomStringConvertible", "startButton"]
+- !private ["Ps23CustomStringConvertible", "tapStartButton"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "timeString"]
+- !private ["Ps23CustomStringConvertible", "timer"]
+- !private ["Ps23CustomStringConvertible", "timerLabel"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "Int"]
+- ["Ps9Equatable", "PomodoroService"]
+- !private ["Ps9Equatable", "PomodoroViewController"]
+- !private ["Ps9Equatable", "Sample"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "TimeInterval"]
+- ["Ps9Equatable", "Timer"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addTarget"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "counter"]
+- !private ["Ps9Equatable", "counting"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invalidate"]
+- !private ["Ps9Equatable", "normal"]
+- !private ["Ps9Equatable", "pomodoroService"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "savePomodoro"]
+- !private ["Ps9Equatable", "scheduledTimer"]
+- !private ["Ps9Equatable", "setTitle"]
+- !private ["Ps9Equatable", "startButton"]
+- !private ["Ps9Equatable", "tapStartButton"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "timeString"]
+- !private ["Ps9Equatable", "timer"]
+- !private ["Ps9Equatable", "timerLabel"]
+- !private ["Ps9Equatable", "touchUpInside"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
+- !private ["Ps25ExpressibleByArrayLiteral", "touchUpInside"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "debugDescription"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "Int"]
+- ["Ps8Hashable", "PomodoroService"]
+- !private ["Ps8Hashable", "PomodoroViewController"]
+- !private ["Ps8Hashable", "Sample"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "TimeInterval"]
+- ["Ps8Hashable", "Timer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addTarget"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "counter"]
+- !private ["Ps8Hashable", "counting"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invalidate"]
+- !private ["Ps8Hashable", "pomodoroService"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "savePomodoro"]
+- !private ["Ps8Hashable", "scheduledTimer"]
+- !private ["Ps8Hashable", "setTitle"]
+- !private ["Ps8Hashable", "startButton"]
+- !private ["Ps8Hashable", "tapStartButton"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "timeString"]
+- !private ["Ps8Hashable", "timer"]
+- !private ["Ps8Hashable", "timerLabel"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "Int"]
+- ["PSo8NSCoding", "PomodoroService"]
+- !private ["PSo8NSCoding", "PomodoroViewController"]
+- !private ["PSo8NSCoding", "Sample"]
+- !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "TimeInterval"]
+- ["PSo8NSCoding", "Timer"]
+- !private ["PSo8NSCoding", "addTarget"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "counter"]
+- !private ["PSo8NSCoding", "counting"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "pomodoroService"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "savePomodoro"]
+- !private ["PSo8NSCoding", "setTitle"]
+- !private ["PSo8NSCoding", "startButton"]
+- !private ["PSo8NSCoding", "tapStartButton"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "timeString"]
+- !private ["PSo8NSCoding", "timer"]
+- !private ["PSo8NSCoding", "timerLabel"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
+- ["PSo26NSExtensionRequestHandling", "PomodoroService"]
+- !private ["PSo26NSExtensionRequestHandling", "PomodoroViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "Sample"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "TimeInterval"]
+- ["PSo26NSExtensionRequestHandling", "Timer"]
+- !private ["PSo26NSExtensionRequestHandling", "count"]
+- !private ["PSo26NSExtensionRequestHandling", "counter"]
+- !private ["PSo26NSExtensionRequestHandling", "counting"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "pomodoroService"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "savePomodoro"]
+- !private ["PSo26NSExtensionRequestHandling", "startButton"]
+- !private ["PSo26NSExtensionRequestHandling", "tapStartButton"]
+- !private ["PSo26NSExtensionRequestHandling", "timeString"]
+- !private ["PSo26NSExtensionRequestHandling", "timer"]
+- !private ["PSo26NSExtensionRequestHandling", "timerLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "PomodoroService"]
+- !private ["CSo8NSObject", "PomodoroViewController"]
+- ["CSo8NSObject", "Sample"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "TimeInterval"]
+- ["CSo8NSObject", "Timer"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "addTarget"]
+- ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "counter"]
+- ["CSo8NSObject", "counting"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "invalidate"]
+- ["CSo8NSObject", "pomodoroImageView"]
+- ["CSo8NSObject", "pomodoroService"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "savePomodoro"]
+- !private ["CSo8NSObject", "scheduledTimer"]
+- !private ["CSo8NSObject", "setTitle"]
+- ["CSo8NSObject", "startButton"]
+- ["CSo8NSObject", "tapStartButton"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "timeString"]
+- ["CSo8NSObject", "timer"]
+- ["CSo8NSObject", "timerLabel"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- ["PSo16NSObjectProtocol", "PomodoroService"]
+- !private ["PSo16NSObjectProtocol", "PomodoroViewController"]
+- !private ["PSo16NSObjectProtocol", "Sample"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "TimeInterval"]
+- ["PSo16NSObjectProtocol", "Timer"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "counter"]
+- !private ["PSo16NSObjectProtocol", "counting"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "invalidate"]
+- !private ["PSo16NSObjectProtocol", "pomodoroService"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "savePomodoro"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimer"]
+- !private ["PSo16NSObjectProtocol", "setTitle"]
+- !private ["PSo16NSObjectProtocol", "startButton"]
+- !private ["PSo16NSObjectProtocol", "tapStartButton"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "timeString"]
+- !private ["PSo16NSObjectProtocol", "timer"]
+- !private ["PSo16NSObjectProtocol", "timerLabel"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps9OptionSet", "normal"]
+- !private ["Ps9OptionSet", "touchUpInside"]
+- !private ["Sq", "debugDescription"]
+- ["P11PomodoroApp18PomodoroRepository", "init"]
+- !private ["P11PomodoroApp18PomodoroRepository", "save"]
+- !private ["V11PomodoroApp15PomodoroService", "deinit"]
+- ["V11PomodoroApp15PomodoroService", "init"]
+- !private ["V11PomodoroApp15PomodoroService", "save"]
+- ["C11PomodoroApp22PomodoroViewController", "Bool"]
+- !private ["C11PomodoroApp22PomodoroViewController", "Int"]
+- ["C11PomodoroApp22PomodoroViewController", "PomodoroService"]
+- !private ["C11PomodoroApp22PomodoroViewController", "PomodoroViewController"]
+- ["C11PomodoroApp22PomodoroViewController", "Sample"]
+- ["C11PomodoroApp22PomodoroViewController", "String"]
+- ["C11PomodoroApp22PomodoroViewController", "TimeInterval"]
+- ["C11PomodoroApp22PomodoroViewController", "Timer"]
+- ["C11PomodoroApp22PomodoroViewController", "UIButton"]
+- ["C11PomodoroApp22PomodoroViewController", "UIImageView"]
+- ["C11PomodoroApp22PomodoroViewController", "UILabel"]
+- ["C11PomodoroApp22PomodoroViewController", "count"]
+- ["C11PomodoroApp22PomodoroViewController", "counter"]
+- ["C11PomodoroApp22PomodoroViewController", "counting"]
+- ["C11PomodoroApp22PomodoroViewController", "deinit"]
+- ["C11PomodoroApp22PomodoroViewController", "init"]
+- ["C11PomodoroApp22PomodoroViewController", "pomodoroImageView"]
+- ["C11PomodoroApp22PomodoroViewController", "pomodoroService"]
+- !private ["C11PomodoroApp22PomodoroViewController", "print"]
+- ["C11PomodoroApp22PomodoroViewController", "savePomodoro"]
+- ["C11PomodoroApp22PomodoroViewController", "startButton"]
+- ["C11PomodoroApp22PomodoroViewController", "tapStartButton"]
+- ["C11PomodoroApp22PomodoroViewController", "timeString"]
+- ["C11PomodoroApp22PomodoroViewController", "timer"]
+- ["C11PomodoroApp22PomodoroViewController", "timerLabel"]
+- ["C11PomodoroApp22PomodoroViewController", "viewDidLoad"]
+- ["P11PomodoroApp30PomodoroViewControllerDelegate", "Pomodoro"]
+- ["P11PomodoroApp30PomodoroViewControllerDelegate", "didTapStartButton"]
+- !private ["Ps16RawRepresentable", "normal"]
+- !private ["Ps16RawRepresentable", "touchUpInside"]
+- !private ["V11PomodoroApp6Sample", "init"]
+- !private ["Ps10SetAlgebra", "normal"]
+- !private ["Ps10SetAlgebra", "touchUpInside"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["CSo5Timer", "init"]
+- !private ["CSo5Timer", "invalidate"]
+- !private ["CSo5Timer", "scheduledTimer"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "setTitle"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
+- ["PSo21UIAppearanceContainer", "PomodoroService"]
+- !private ["PSo21UIAppearanceContainer", "PomodoroViewController"]
+- !private ["PSo21UIAppearanceContainer", "Sample"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "TimeInterval"]
+- ["PSo21UIAppearanceContainer", "Timer"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
+- !private ["PSo21UIAppearanceContainer", "count"]
+- !private ["PSo21UIAppearanceContainer", "counter"]
+- !private ["PSo21UIAppearanceContainer", "counting"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "pomodoroService"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "savePomodoro"]
+- !private ["PSo21UIAppearanceContainer", "setTitle"]
+- !private ["PSo21UIAppearanceContainer", "startButton"]
+- !private ["PSo21UIAppearanceContainer", "tapStartButton"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "timeString"]
+- !private ["PSo21UIAppearanceContainer", "timer"]
+- !private ["PSo21UIAppearanceContainer", "timerLabel"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "setTitle"]
+- !private ["PSo18UIContentContainer", "Int"]
+- ["PSo18UIContentContainer", "PomodoroService"]
+- !private ["PSo18UIContentContainer", "PomodoroViewController"]
+- !private ["PSo18UIContentContainer", "Sample"]
+- !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "TimeInterval"]
+- ["PSo18UIContentContainer", "Timer"]
+- !private ["PSo18UIContentContainer", "count"]
+- !private ["PSo18UIContentContainer", "counter"]
+- !private ["PSo18UIContentContainer", "counting"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "pomodoroService"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "savePomodoro"]
+- !private ["PSo18UIContentContainer", "startButton"]
+- !private ["PSo18UIContentContainer", "tapStartButton"]
+- !private ["PSo18UIContentContainer", "timeString"]
+- !private ["PSo18UIContentContainer", "timer"]
+- !private ["PSo18UIContentContainer", "timerLabel"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "setTitle"]
+- !private ["VSC15UIControlEvents", "touchUpInside"]
+- !private ["VSC14UIControlState", "normal"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "setTitle"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "setTitle"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
+- ["PSo18UIFocusEnvironment", "PomodoroService"]
+- !private ["PSo18UIFocusEnvironment", "PomodoroViewController"]
+- !private ["PSo18UIFocusEnvironment", "Sample"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "TimeInterval"]
+- ["PSo18UIFocusEnvironment", "Timer"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
+- !private ["PSo18UIFocusEnvironment", "count"]
+- !private ["PSo18UIFocusEnvironment", "counter"]
+- !private ["PSo18UIFocusEnvironment", "counting"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "pomodoroService"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "savePomodoro"]
+- !private ["PSo18UIFocusEnvironment", "setTitle"]
+- !private ["PSo18UIFocusEnvironment", "startButton"]
+- !private ["PSo18UIFocusEnvironment", "tapStartButton"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "timeString"]
+- !private ["PSo18UIFocusEnvironment", "timer"]
+- !private ["PSo18UIFocusEnvironment", "timerLabel"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addTarget"]
+- !private ["PSo11UIFocusItem", "setTitle"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "PomodoroService"]
+- !private ["CSo11UIResponder", "PomodoroViewController"]
+- ["CSo11UIResponder", "Sample"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "TimeInterval"]
+- ["CSo11UIResponder", "Timer"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "addTarget"]
+- ["CSo11UIResponder", "count"]
+- ["CSo11UIResponder", "counter"]
+- ["CSo11UIResponder", "counting"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "pomodoroImageView"]
+- ["CSo11UIResponder", "pomodoroService"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "savePomodoro"]
+- !private ["CSo11UIResponder", "setTitle"]
+- ["CSo11UIResponder", "startButton"]
+- ["CSo11UIResponder", "tapStartButton"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "timeString"]
+- ["CSo11UIResponder", "timer"]
+- ["CSo11UIResponder", "timerLabel"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Int"]
+- ["PSo30UIResponderStandardEditActions", "PomodoroService"]
+- !private ["PSo30UIResponderStandardEditActions", "PomodoroViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "Sample"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "TimeInterval"]
+- ["PSo30UIResponderStandardEditActions", "Timer"]
+- !private ["PSo30UIResponderStandardEditActions", "addTarget"]
+- !private ["PSo30UIResponderStandardEditActions", "count"]
+- !private ["PSo30UIResponderStandardEditActions", "counter"]
+- !private ["PSo30UIResponderStandardEditActions", "counting"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "pomodoroService"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "savePomodoro"]
+- !private ["PSo30UIResponderStandardEditActions", "setTitle"]
+- !private ["PSo30UIResponderStandardEditActions", "startButton"]
+- !private ["PSo30UIResponderStandardEditActions", "tapStartButton"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "timeString"]
+- !private ["PSo30UIResponderStandardEditActions", "timer"]
+- !private ["PSo30UIResponderStandardEditActions", "timerLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "Int"]
+- ["PSo16UIStateRestoring", "PomodoroService"]
+- !private ["PSo16UIStateRestoring", "PomodoroViewController"]
+- !private ["PSo16UIStateRestoring", "Sample"]
+- !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "TimeInterval"]
+- ["PSo16UIStateRestoring", "Timer"]
+- !private ["PSo16UIStateRestoring", "count"]
+- !private ["PSo16UIStateRestoring", "counter"]
+- !private ["PSo16UIStateRestoring", "counting"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "pomodoroService"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "savePomodoro"]
+- !private ["PSo16UIStateRestoring", "startButton"]
+- !private ["PSo16UIStateRestoring", "tapStartButton"]
+- !private ["PSo16UIStateRestoring", "timeString"]
+- !private ["PSo16UIStateRestoring", "timer"]
+- !private ["PSo16UIStateRestoring", "timerLabel"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "Int"]
+- ["PSo18UITraitEnvironment", "PomodoroService"]
+- !private ["PSo18UITraitEnvironment", "PomodoroViewController"]
+- !private ["PSo18UITraitEnvironment", "Sample"]
+- !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "TimeInterval"]
+- ["PSo18UITraitEnvironment", "Timer"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
+- !private ["PSo18UITraitEnvironment", "count"]
+- !private ["PSo18UITraitEnvironment", "counter"]
+- !private ["PSo18UITraitEnvironment", "counting"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "pomodoroService"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "savePomodoro"]
+- !private ["PSo18UITraitEnvironment", "setTitle"]
+- !private ["PSo18UITraitEnvironment", "startButton"]
+- !private ["PSo18UITraitEnvironment", "tapStartButton"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "timeString"]
+- !private ["PSo18UITraitEnvironment", "timer"]
+- !private ["PSo18UITraitEnvironment", "timerLabel"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "setTitle"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "PomodoroService"]
+- !private ["CSo16UIViewController", "PomodoroViewController"]
+- ["CSo16UIViewController", "Sample"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "TimeInterval"]
+- ["CSo16UIViewController", "Timer"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "count"]
+- ["CSo16UIViewController", "counter"]
+- ["CSo16UIViewController", "counting"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "pomodoroImageView"]
+- ["CSo16UIViewController", "pomodoroService"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "savePomodoro"]
+- ["CSo16UIViewController", "startButton"]
+- ["CSo16UIViewController", "tapStartButton"]
+- ["CSo16UIViewController", "timeString"]
+- ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "timerLabel"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
+- ["Ps9_Hashable", "PomodoroService"]
+- !private ["Ps9_Hashable", "PomodoroViewController"]
+- !private ["Ps9_Hashable", "Sample"]
+- !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "TimeInterval"]
+- ["Ps9_Hashable", "Timer"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addTarget"]
+- !private ["Ps9_Hashable", "count"]
+- !private ["Ps9_Hashable", "counter"]
+- !private ["Ps9_Hashable", "counting"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "invalidate"]
+- !private ["Ps9_Hashable", "pomodoroService"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "savePomodoro"]
+- !private ["Ps9_Hashable", "scheduledTimer"]
+- !private ["Ps9_Hashable", "setTitle"]
+- !private ["Ps9_Hashable", "startButton"]
+- !private ["Ps9_Hashable", "tapStartButton"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "timeString"]
+- !private ["Ps9_Hashable", "timer"]
+- !private ["Ps9_Hashable", "timerLabel"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps9OptionSet"
+- !private "Sq"
+- "P11PomodoroApp18PomodoroRepository"
+- "V11PomodoroApp15PomodoroService"
+- "C11PomodoroApp22PomodoroViewController"
+- "P11PomodoroApp30PomodoroViewControllerDelegate"
+- !private "Ps16RawRepresentable"
+- !private "V11PomodoroApp6Sample"
+- !private "Ps10SetAlgebra"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "CSo5Timer"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
+interface-hash: "fa4516fe2be76dfbafe85799a05dd86b"
