@@ -93,15 +93,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="68" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="F8g-MD-IXh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F8g-MD-IXh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" rowHeight="68" id="UyN-GP-rbQ" customClass="HistoryViewCell" customModule="PomodoroApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="68"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyN-GP-rbQ" id="tMj-Vi-AgI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upk-6a-nNC">
@@ -139,6 +139,32 @@
                                             <outlet property="relativeTimeLabel" destination="FE7-I2-mLy" id="Bo1-Uf-2ZE"/>
                                             <outlet property="statusLabel" destination="ade-Gq-JPb" id="BBi-Ju-pwG"/>
                                             <outlet property="timerLabel" destination="upk-6a-nNC" id="a9R-n4-sr0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="28" id="BRo-SM-IBt" customClass="HistoryHeaderView" customModule="PomodoroApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="96" width="375" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BRo-SM-IBt" id="zZT-gu-U7e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="27.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-6b-m98">
+                                                    <rect key="frame" x="8" y="3" width="359" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fTh-6b-m98" firstAttribute="leading" secondItem="zZT-gu-U7e" secondAttribute="leading" constant="8" id="7je-NY-aCx"/>
+                                                <constraint firstAttribute="bottom" secondItem="fTh-6b-m98" secondAttribute="bottom" constant="3.5" id="NBe-0Z-jZw"/>
+                                                <constraint firstAttribute="trailing" secondItem="fTh-6b-m98" secondAttribute="trailing" constant="8" id="ldQ-cA-uoc"/>
+                                                <constraint firstItem="fTh-6b-m98" firstAttribute="top" secondItem="zZT-gu-U7e" secondAttribute="top" constant="3" id="uF3-m9-qUy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.75404983759999999" green="0.10097415" blue="0.1006775424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="headerNameLabel" destination="fTh-6b-m98" id="Rck-A0-665"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

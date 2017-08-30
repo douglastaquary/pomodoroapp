@@ -22,11 +22,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<data>
-		9fXSAK26+BxqzC+IYmugNo1Basc=
+		bbtC4ZAcFdrym5Qx4+Pr0BFfY9U=
 		</data>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		8brkitu8aIlYdrBWnRuT6Bq79Gw=
+		5C2KkkX1piDR509LwDRXXtX480A=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<data>
-		Nvopb2jAB2iVsK8LipqoRid1apk=
+		RKCgeU0jCjA1lt4cV1PcmmYlfHk=
 		</data>
 		<key>Frameworks/SwiftDate.framework/Info.plist</key>
 		<data>
@@ -326,9 +326,13 @@
 		<data>
 		McgM+8MzubvqMEZdVuW7jHMYYV4=
 		</data>
+		<key>HistoryHeaderView.nib</key>
+		<data>
+		JPVmUvJj4wuMy1e0fZeL1sYLUbA=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		cPYTJrqS/Yr1cVJfN5tV9JAnU+g=
+		2xrMGv37oHb8FuRNGq2GPypCBOw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -397,22 +401,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9fXSAK26+BxqzC+IYmugNo1Basc=
+			bbtC4ZAcFdrym5Qx4+Pr0BFfY9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			wQZu7pHyjj+EvNJm+bJxRJ0G64y+k7MfC8etW1BWPIA=
+			EKVKg9GAHjY8HFiSCoO2r+Ecz//RDfIykrFyc9M5zR4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8brkitu8aIlYdrBWnRuT6Bq79Gw=
+			5C2KkkX1piDR509LwDRXXtX480A=
 			</data>
 			<key>hash2</key>
 			<data>
-			hXWjJ62izPC3FBH3UuXcSF1NnH60RRUbNbRq+8QJGJY=
+			9TJ1d/Qb3Tuc7HGnyLitQNKNFuLdpyDBBXPnFfV8Sss=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -430,11 +434,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Nvopb2jAB2iVsK8LipqoRid1apk=
+			RKCgeU0jCjA1lt4cV1PcmmYlfHk=
 			</data>
 			<key>hash2</key>
 			<data>
-			J012sF65uXIjLr8DaGrqcSgZZkGixQ/6jQfgdrFxus0=
+			fKCXwJ08YWdzw4NhUpJAInmN9bYDMcfUn930YEXCiRw=
 			</data>
 		</dict>
 		<key>Frameworks/SwiftDate.framework/Info.plist</key>
@@ -927,6 +931,17 @@
 			<key>hash2</key>
 			<data>
 			ROSIwfDt3skQEuNVDpcbuXCfF7csJv31U6bsVo0ztcw=
+			</data>
+		</dict>
+		<key>HistoryHeaderView.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JPVmUvJj4wuMy1e0fZeL1sYLUbA=
+			</data>
+			<key>hash2</key>
+			<data>
+			jP0thAuzC+0BDrgaQ+35E4o4Ol9JGJNYnTJA1DhTf6E=
 			</data>
 		</dict>
 		<key>Pomodoro.momd/Pomodoro.mom</key>

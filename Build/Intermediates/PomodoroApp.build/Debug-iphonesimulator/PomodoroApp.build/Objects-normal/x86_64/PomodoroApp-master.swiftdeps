@@ -1,14 +1,15 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "acd2dc95272eb0c48dad9069f1039693"
-build_time: [557375142, 489353000]
+build_time: [557377681, 574834000]
 inputs:
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/PomodoroViewController.swift": [557373910, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/Date+Extensions.swift": [557371401, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/AppDelegate.swift": [556927543, 0]
+  "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/HistoryHeaderView.swift": [557376620, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/PomodoroRepository.swift": [557371348, 0]
-  "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/PomodoroService.swift": [557372852, 0]
+  "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/PomodoroService.swift": [557377681, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/DatabaseManager.swift": [557365330, 0]
-  "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/HistoryViewController.swift": [557374860, 0]
+  "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/HistoryViewController.swift": [557377545, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/Sample.swift": [557366555, 0]
   "/iOS Projects/Github repositories/PomodoroApp/PomodoroApp/HistoryViewCell.swift": [557367280, 0]
   "/iOS Projects/Github repositories/PomodoroApp/Build/Intermediates/PomodoroApp.build/Debug-iphonesimulator/PomodoroApp.build/DerivedSources/CoreDataGenerated/Pomodoro/Pomodoro+CoreDataClass.swift": [557367767, 0]

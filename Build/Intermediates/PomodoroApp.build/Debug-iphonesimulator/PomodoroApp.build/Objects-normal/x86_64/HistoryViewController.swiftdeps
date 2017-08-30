@@ -10,6 +10,7 @@ provides-member:
 - ["C11PomodoroApp21HistoryViewController", "loadPomodoros"]
 provides-dynamic-lookup:
 - "cellIdentifier"
+- "headerCell"
 - "loadPomodoros"
 - "numberOfSections"
 - "tableView"
@@ -19,6 +20,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "CastingPrecedence"
+- !private "HistoryHeaderView"
 - !private "HistoryViewCell"
 - "HistoryViewController"
 - "IndexPath"
@@ -31,11 +33,13 @@ depends-top-level:
 - "UITableViewCell"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
+- "UIView"
 - "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "PomodoroService"]
 - !private ["Ps9AnyObject", "cellIdentifier"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "headerCell"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9AnyObject", "init"]
@@ -81,6 +85,7 @@ depends-member:
 - !private ["Ps7CVarArg", "cellIdentifier"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "headerCell"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps7CVarArg", "init"]
@@ -125,6 +130,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cellIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "headerCell"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -170,6 +176,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cellIdentifier"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "headerCell"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -208,6 +215,7 @@ depends-member:
 - ["Ps9Equatable", "PomodoroService"]
 - !private ["Ps9Equatable", "cellIdentifier"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "headerCell"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
@@ -252,6 +260,7 @@ depends-member:
 - ["Ps8Hashable", "PomodoroService"]
 - !private ["Ps8Hashable", "cellIdentifier"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "headerCell"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
@@ -286,8 +295,10 @@ depends-member:
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
+- !private ["C11PomodoroApp17HistoryHeaderView", "setup"]
 - !private ["C11PomodoroApp15HistoryViewCell", "setup"]
 - ["C11PomodoroApp21HistoryViewController", "Bool"]
+- !private ["C11PomodoroApp21HistoryViewController", "HistoryHeaderView"]
 - !private ["C11PomodoroApp21HistoryViewController", "HistoryViewCell"]
 - ["C11PomodoroApp21HistoryViewController", "IndexPath"]
 - ["C11PomodoroApp21HistoryViewController", "Int"]
@@ -296,8 +307,10 @@ depends-member:
 - ["C11PomodoroApp21HistoryViewController", "String"]
 - ["C11PomodoroApp21HistoryViewController", "UITableView"]
 - ["C11PomodoroApp21HistoryViewController", "UITableViewCell"]
+- ["C11PomodoroApp21HistoryViewController", "UIView"]
 - ["C11PomodoroApp21HistoryViewController", "cellIdentifier"]
 - ["C11PomodoroApp21HistoryViewController", "deinit"]
+- ["C11PomodoroApp21HistoryViewController", "headerCell"]
 - ["C11PomodoroApp21HistoryViewController", "indexPathForPreferredFocusedView"]
 - ["C11PomodoroApp21HistoryViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C11PomodoroApp21HistoryViewController", "init"]
@@ -337,6 +350,7 @@ depends-member:
 - ["PSo8NSCoding", "PomodoroService"]
 - !private ["PSo8NSCoding", "cellIdentifier"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "headerCell"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
@@ -372,6 +386,7 @@ depends-member:
 - ["PSo9NSCopying", "init"]
 - ["PSo26NSExtensionRequestHandling", "PomodoroService"]
 - !private ["PSo26NSExtensionRequestHandling", "cellIdentifier"]
+- !private ["PSo26NSExtensionRequestHandling", "headerCell"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
@@ -403,6 +418,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "HistoryHeaderView"]
 - !private ["CSo8NSObject", "HistoryViewCell"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
@@ -411,8 +427,10 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "cellIdentifier"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
+- ["CSo8NSObject", "headerCell"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -447,6 +465,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "PomodoroService"]
 - !private ["PSo16NSObjectProtocol", "cellIdentifier"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "headerCell"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -512,6 +531,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "PomodoroService"]
 - !private ["PSo21UIAppearanceContainer", "cellIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "headerCell"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -545,6 +565,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "PomodoroService"]
 - !private ["PSo18UIContentContainer", "cellIdentifier"]
+- !private ["PSo18UIContentContainer", "headerCell"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -583,6 +604,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "PomodoroService"]
 - !private ["PSo18UIFocusEnvironment", "cellIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "headerCell"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -620,6 +642,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "setup"]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "HistoryHeaderView"]
 - !private ["CSo11UIResponder", "HistoryViewCell"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
@@ -628,8 +651,10 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "cellIdentifier"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
+- ["CSo11UIResponder", "headerCell"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -663,6 +688,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "PomodoroService"]
 - !private ["PSo30UIResponderStandardEditActions", "cellIdentifier"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "headerCell"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -698,6 +724,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "reloadData"]
 - ["PSo20UIScrollViewDelegate", "PomodoroService"]
 - !private ["PSo20UIScrollViewDelegate", "cellIdentifier"]
+- !private ["PSo20UIScrollViewDelegate", "headerCell"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "loadPomodoros"]
@@ -726,6 +753,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "PomodoroService"]
 - !private ["PSo16UIStateRestoring", "cellIdentifier"]
+- !private ["PSo16UIStateRestoring", "headerCell"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -760,6 +788,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "setup"]
 - ["PSo21UITableViewDataSource", "PomodoroService"]
 - !private ["PSo21UITableViewDataSource", "cellIdentifier"]
+- !private ["PSo21UITableViewDataSource", "headerCell"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "loadPomodoros"]
@@ -788,6 +817,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "PomodoroService"]
 - !private ["PSo19UITableViewDelegate", "cellIdentifier"]
+- !private ["PSo19UITableViewDelegate", "headerCell"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "loadPomodoros"]
@@ -817,6 +847,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "PomodoroService"]
 - !private ["PSo18UITraitEnvironment", "cellIdentifier"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "headerCell"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -852,6 +883,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "setup"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "HistoryHeaderView"]
 - !private ["CSo16UIViewController", "HistoryViewCell"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
@@ -860,7 +892,9 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "cellIdentifier"]
+- ["CSo16UIViewController", "headerCell"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
@@ -910,6 +944,7 @@ depends-member:
 - ["Ps9_Hashable", "PomodoroService"]
 - !private ["Ps9_Hashable", "cellIdentifier"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "headerCell"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9_Hashable", "init"]
@@ -985,6 +1020,7 @@ depends-nominal:
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- !private "C11PomodoroApp17HistoryHeaderView"
 - !private "C11PomodoroApp15HistoryViewCell"
 - "C11PomodoroApp21HistoryViewController"
 - !private "V10Foundation9IndexPath"
@@ -1068,4 +1104,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "8096f84166e02f7eaa941c9e94e4da21"
+interface-hash: "6b1675552cdaaa170938bf6a4e9942aa"

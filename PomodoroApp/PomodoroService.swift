@@ -19,6 +19,7 @@ public struct PomodoroService: PomodoroRepository {
 
     public enum Error: Swift.Error {
         case unableToSave
+        case nothingError
     }
     
     var currentSamples: [NSManagedObject] = []
@@ -27,13 +28,13 @@ public struct PomodoroService: PomodoroRepository {
                                Section(name: "Yesterday", items: [])]
     
     let managedContext = DatabaseManager().persistentContainer.viewContext
-    
-    let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())!
-    
+
     
     //MARK: Fetch
     
     public mutating func fetch(_ completion: @escaping ([Section]) -> Void) {
+        
+        clearSections()
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Pomodoro")
 
@@ -48,18 +49,27 @@ public struct PomodoroService: PomodoroRepository {
                 guard let newDate = sample.value(forKey: "relativeTime") as? Date else { return }
             
                 if Date().isToday(to: newDate) {
+                    
                     sections[0].items.append(sample)
+                    
                 } else {
+                    
                     sections[1].items.append(sample)
                 }
             }
 
-
-        }catch{
+        } catch {
+           
             fatalError("Error is retriving titles items")
         }
 
         completion(sections)
+    }
+    
+    
+    mutating func clearSections() {
+        sections[0].items.removeAll()
+        sections[1].items.removeAll()
     }
     
     
@@ -79,7 +89,6 @@ public struct PomodoroService: PomodoroRepository {
         sample.setValue(dateNow, forKey: "relativeTime")
         sample.setValue(object.newState, forKey: "state")
         
-        
         do {
             
             try managedContext.save()
@@ -90,7 +99,7 @@ public struct PomodoroService: PomodoroRepository {
             
         }
 
-        completion(Error.unableToSave)
+        completion(Error.nothingError)
     }
 }
 

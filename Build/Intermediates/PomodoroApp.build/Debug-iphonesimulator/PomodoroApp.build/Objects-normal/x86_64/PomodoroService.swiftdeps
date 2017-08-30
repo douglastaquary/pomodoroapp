@@ -16,10 +16,9 @@ depends-top-level:
 - "=="
 - "Array"
 - "AssignmentPrecedence"
-- "Calendar"
 - "CastingPrecedence"
 - "DatabaseManager"
-- "Date"
+- !private "Date"
 - !private "NSEntityDescription"
 - !private "NSError"
 - !private "NSFetchRequest"
@@ -46,8 +45,10 @@ depends-member:
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewContext"]
 - !private ["Sa", "append"]
+- !private ["Sa", "removeAll"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "removeAll"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -56,27 +57,25 @@ depends-member:
 - !private ["Ps7CVarArg", "fetch"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "removeAll"]
 - !private ["Ps7CVarArg", "save"]
 - !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "userInfo"]
 - !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", "viewContext"]
-- ["V10Foundation8Calendar", "current"]
-- ["V10Foundation8Calendar", "date"]
 - !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "removeAll"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "isToday"]
-- ["OV10Foundation8Calendar9Component", "day"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
-- ["Ps28CustomDebugStringConvertible", "current"]
-- ["Ps28CustomDebugStringConvertible", "date"]
 - !private ["Ps28CustomDebugStringConvertible", "entity"]
 - !private ["Ps28CustomDebugStringConvertible", "fetch"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isToday"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAll"]
 - !private ["Ps28CustomDebugStringConvertible", "save"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -89,21 +88,19 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "isToday"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
-- ["Ps17CustomReflectable", "current"]
-- ["Ps17CustomReflectable", "date"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "isToday"]
+- !private ["Ps17CustomReflectable", "removeAll"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
-- ["Ps23CustomStringConvertible", "current"]
-- ["Ps23CustomStringConvertible", "date"]
 - !private ["Ps23CustomStringConvertible", "entity"]
 - !private ["Ps23CustomStringConvertible", "fetch"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isToday"]
+- !private ["Ps23CustomStringConvertible", "removeAll"]
 - !private ["Ps23CustomStringConvertible", "save"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -112,7 +109,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewContext"]
 - ["C11PomodoroApp15DatabaseManager", "init"]
 - ["C11PomodoroApp15DatabaseManager", "persistentContainer"]
-- ["V10Foundation4Date", "init"]
+- !private ["V10Foundation4Date", "init"]
 - !private ["V10Foundation4Date", "isToday"]
 - ["Ps9Equatable", "_code"]
 - ["Ps9Equatable", "_domain"]
@@ -120,9 +117,6 @@ depends-member:
 - ["Ps9Equatable", "_getEmbeddedNSError"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "_userInfo"]
-- ["Ps9Equatable", "current"]
-- ["Ps9Equatable", "date"]
-- ["Ps9Equatable", "day"]
 - !private ["Ps9Equatable", "entity"]
 - !private ["Ps9Equatable", "fetch"]
 - ["Ps9Equatable", "hashValue"]
@@ -154,7 +148,7 @@ depends-member:
 - !private ["Ps5Error", "userInfo"]
 - ["Ps5Error", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
-- ["Ps25ExpressibleByArrayLiteral", "day"]
+- !private ["Ps25ExpressibleByArrayLiteral", "removeAll"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -167,9 +161,6 @@ depends-member:
 - ["Ps8Hashable", "_getEmbeddedNSError"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "_userInfo"]
-- ["Ps8Hashable", "current"]
-- ["Ps8Hashable", "date"]
-- ["Ps8Hashable", "day"]
 - !private ["Ps8Hashable", "entity"]
 - !private ["Ps8Hashable", "fetch"]
 - ["Ps8Hashable", "hashValue"]
@@ -190,6 +181,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "removeAll"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["PSo8NSCoding", "entity"]
 - !private ["PSo8NSCoding", "fetch"]
@@ -234,15 +226,14 @@ depends-member:
 - ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - ["CSo8NSString", "init"]
-- ["Ps9OptionSet", "day"]
-- ["P11PomodoroApp18PomodoroRepository", "Calendar"]
 - ["P11PomodoroApp18PomodoroRepository", "DatabaseManager"]
-- ["P11PomodoroApp18PomodoroRepository", "Date"]
+- !private ["P11PomodoroApp18PomodoroRepository", "Date"]
 - !private ["P11PomodoroApp18PomodoroRepository", "Error"]
 - !private ["P11PomodoroApp18PomodoroRepository", "NSEntityDescription"]
 - !private ["P11PomodoroApp18PomodoroRepository", "NSFetchRequest"]
 - !private ["P11PomodoroApp18PomodoroRepository", "NSManagedObject"]
 - ["P11PomodoroApp18PomodoroRepository", "Section"]
+- !private ["P11PomodoroApp18PomodoroRepository", "clearSections"]
 - !private ["P11PomodoroApp18PomodoroRepository", "currentSamples"]
 - !private ["P11PomodoroApp18PomodoroRepository", "fatalError"]
 - ["P11PomodoroApp18PomodoroRepository", "fetch"]
@@ -251,9 +242,8 @@ depends-member:
 - ["P11PomodoroApp18PomodoroRepository", "save"]
 - !private ["P11PomodoroApp18PomodoroRepository", "sections"]
 - ["P11PomodoroApp18PomodoroRepository", ""]
-- ["V11PomodoroApp15PomodoroService", "Calendar"]
 - ["V11PomodoroApp15PomodoroService", "DatabaseManager"]
-- ["V11PomodoroApp15PomodoroService", "Date"]
+- !private ["V11PomodoroApp15PomodoroService", "Date"]
 - ["V11PomodoroApp15PomodoroService", "Error"]
 - !private ["V11PomodoroApp15PomodoroService", "NSEntityDescription"]
 - !private ["V11PomodoroApp15PomodoroService", "NSError"]
@@ -264,6 +254,7 @@ depends-member:
 - ["V11PomodoroApp15PomodoroService", "Section"]
 - ["V11PomodoroApp15PomodoroService", "Swift"]
 - ["V11PomodoroApp15PomodoroService", "Void"]
+- ["V11PomodoroApp15PomodoroService", "clearSections"]
 - ["V11PomodoroApp15PomodoroService", "currentSamples"]
 - ["V11PomodoroApp15PomodoroService", "deinit"]
 - !private ["V11PomodoroApp15PomodoroService", "fatalError"]
@@ -273,15 +264,13 @@ depends-member:
 - !private ["V11PomodoroApp15PomodoroService", "print"]
 - ["V11PomodoroApp15PomodoroService", "save"]
 - ["V11PomodoroApp15PomodoroService", "sections"]
-- ["V11PomodoroApp15PomodoroService", "yesterday"]
 - !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "removeAll"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "removeAll"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
-- ["Ps16RawRepresentable", "day"]
-- ["P10Foundation20ReferenceConvertible", "current"]
-- ["P10Foundation20ReferenceConvertible", "date"]
-- ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "isToday"]
 - !private ["V11PomodoroApp6Sample", "newState"]
 - !private ["V11PomodoroApp6Sample", "newTimer"]
@@ -291,8 +280,8 @@ depends-member:
 - ["V11PomodoroApp7Section", "items"]
 - ["V11PomodoroApp7Section", "name"]
 - !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "removeAll"]
 - !private ["Ps8Sequence", "subscript"]
-- ["Ps10SetAlgebra", "day"]
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Vs12StaticString", "init"]
@@ -300,12 +289,14 @@ depends-member:
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
-- ["VCSo10NSCalendar4Unit", "day"]
 - !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "removeAll"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "removeAll"]
 - !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "removeAll"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -321,9 +312,6 @@ depends-member:
 - ["Ps9_Hashable", "_getEmbeddedNSError"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "_userInfo"]
-- ["Ps9_Hashable", "current"]
-- ["Ps9_Hashable", "date"]
-- ["Ps9_Hashable", "day"]
 - !private ["Ps9_Hashable", "entity"]
 - !private ["Ps9_Hashable", "fetch"]
 - ["Ps9_Hashable", "hashValue"]
@@ -338,26 +326,28 @@ depends-member:
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "removeAll"]
 - !private ["Ps10_Indexable", "subscript"]
 - !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "removeAll"]
 - !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
-- ["P10Foundation14_MutableBoxing", "current"]
-- ["P10Foundation14_MutableBoxing", "date"]
 - !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "removeAll"]
 - !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
-- ["Ps21_ObjectiveCBridgeable", "current"]
-- ["Ps21_ObjectiveCBridgeable", "date"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "isToday"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAll"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "removeAll"]
 - !private ["Ps22_RandomAccessIndexable", "subscript"]
 - !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "removeAll"]
 - !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps11_Strideable", "hashValue"]
@@ -368,20 +358,18 @@ depends-nominal:
 - !private "Ps17BitwiseOperations"
 - !private "Sb"
 - "Ps7CVarArg"
-- "V10Foundation8Calendar"
 - !private "Ps10Collection"
 - "Ps10Comparable"
-- "OV10Foundation8Calendar9Component"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "C11PomodoroApp15DatabaseManager"
-- "V10Foundation4Date"
+- !private "V10Foundation4Date"
 - "Ps9Equatable"
 - "OV11PomodoroApp15PomodoroService5Error"
 - "Ps5Error"
-- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
@@ -410,17 +398,14 @@ depends-nominal:
 - "CSo21NSPersistentContainer"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "Ps9OptionSet"
 - "P11PomodoroApp18PomodoroRepository"
 - "V11PomodoroApp15PomodoroService"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps26RangeReplaceableCollection"
-- "Ps16RawRepresentable"
-- "P10Foundation20ReferenceConvertible"
+- !private "P10Foundation20ReferenceConvertible"
 - !private "V11PomodoroApp6Sample"
 - "V11PomodoroApp7Section"
 - !private "Ps8Sequence"
-- "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Vs12StaticString"
@@ -428,7 +413,6 @@ depends-nominal:
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
-- "VCSo10NSCalendar4Unit"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps23_BidirectionalIndexable"
 - !private "Ps24_DestructorSafeContainer"
@@ -446,7 +430,6 @@ depends-nominal:
 - !private "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- "P10Foundation14_MutableBoxing"
 - !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessIndexable"
@@ -473,4 +456,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
-interface-hash: "a1f2eda6af912addc2b8dbf64af22d4e"
+interface-hash: "b583b52c53bdfed1f929daeeb5d84b3b"

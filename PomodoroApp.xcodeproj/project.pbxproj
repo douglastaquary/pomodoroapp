@@ -14,6 +14,8 @@
 		975F02121F5628650065260A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F02111F5628650065260A /* DatabaseManager.swift */; };
 		975F02151F5628CF0065260A /* Pomodoro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 975F02131F5628CF0065260A /* Pomodoro.xcdatamodeld */; };
 		975F02171F562CF60065260A /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F02161F562CF60065260A /* Sample.swift */; };
+		975F021A1F565B560065260A /* HistoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F02191F565B560065260A /* HistoryHeaderView.xib */; };
+		975F021C1F565BDA0065260A /* HistoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F021B1F565BDA0065260A /* HistoryHeaderView.swift */; };
 		97834E981F4F853700E44013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97834E971F4F853700E44013 /* AppDelegate.swift */; };
 		97834E9F1F4F853700E44013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97834E9D1F4F853700E44013 /* Main.storyboard */; };
 		97834EA11F4F853700E44013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97834EA01F4F853700E44013 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		975F02111F5628650065260A /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		975F02141F5628CF0065260A /* Pomodoro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pomodoro.xcdatamodel; sourceTree = "<group>"; };
 		975F02161F562CF60065260A /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		975F02191F565B560065260A /* HistoryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryHeaderView.xib; sourceTree = "<group>"; };
+		975F021B1F565BDA0065260A /* HistoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryHeaderView.swift; sourceTree = "<group>"; };
 		97834E941F4F853700E44013 /* PomodoroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97834E971F4F853700E44013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97834E9E1F4F853700E44013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +127,9 @@
 		97537E9A1F54F65A00E72B57 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				975F02191F565B560065260A /* HistoryHeaderView.xib */,
 				97537E9B1F54F67E00E72B57 /* HistoryViewCell.swift */,
+				975F021B1F565BDA0065260A /* HistoryHeaderView.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975F021A1F565B560065260A /* HistoryHeaderView.xib in Resources */,
 				97834EA41F4F853700E44013 /* LaunchScreen.storyboard in Resources */,
 				97834EA11F4F853700E44013 /* Assets.xcassets in Resources */,
 				97834E9F1F4F853700E44013 /* Main.storyboard in Resources */,
@@ -295,6 +302,7 @@
 				97834EAC1F4F8BDF00E44013 /* PomodoroViewController.swift in Sources */,
 				97834EB51F4FBABA00E44013 /* Date+Extensions.swift in Sources */,
 				97834E981F4F853700E44013 /* AppDelegate.swift in Sources */,
+				975F021C1F565BDA0065260A /* HistoryHeaderView.swift in Sources */,
 				97537E931F54E6A700E72B57 /* PomodoroRepository.swift in Sources */,
 				97537E911F54E61900E72B57 /* PomodoroService.swift in Sources */,
 				975F02121F5628650065260A /* DatabaseManager.swift in Sources */,

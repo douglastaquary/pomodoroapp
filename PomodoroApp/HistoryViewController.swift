@@ -19,6 +19,8 @@ class HistoryViewController: UIViewController {
     
     let cellIdentifier = "BasicCell"
     
+    let headerCell = "HeaderCell"
+    
 }
 
 
@@ -27,6 +29,7 @@ extension HistoryViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         self.navigationItem.title = "Pomodoro App"
         
@@ -36,6 +39,7 @@ extension HistoryViewController {
         super.viewWillAppear(animated)
         
         loadPomodoros()
+        
     }
     
 }
@@ -74,6 +78,17 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setup(with: pomodoro)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableCell(withIdentifier: headerCell) as! HistoryHeaderView
+        
+        headerView.setup(with: pomodoros[section].name)
+        
+        return headerView
+        
+        
+        
     }
     
 }

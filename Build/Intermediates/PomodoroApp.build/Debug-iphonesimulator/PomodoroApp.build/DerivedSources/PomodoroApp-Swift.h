@@ -155,8 +155,19 @@ SWIFT_CLASS("_TtC11PomodoroApp11AppDelegate")
 @end
 
 @class UILabel;
-@class NSManagedObject;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC11PomodoroApp17HistoryHeaderView")
+@interface HistoryHeaderView : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerNameLabel;
+- (void)awakeFromNib;
+- (void)setupWith:(NSString * _Nonnull)name;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSManagedObject;
 
 SWIFT_CLASS("_TtC11PomodoroApp15HistoryViewCell")
 @interface HistoryViewCell : UITableViewCell
@@ -177,6 +188,7 @@ SWIFT_CLASS("_TtC11PomodoroApp21HistoryViewController")
 @interface HistoryViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cellIdentifier;
+@property (nonatomic, readonly, copy) NSString * _Nonnull headerCell;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -192,12 +204,14 @@ SWIFT_CLASS("_TtC11PomodoroApp21HistoryViewController")
 - (void)viewWillAppear:(BOOL)animated;
 @end
 
+@class UIView;
 
 @interface HistoryViewController (SWIFT_EXTENSION(PomodoroApp)) <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSEntityDescription;
