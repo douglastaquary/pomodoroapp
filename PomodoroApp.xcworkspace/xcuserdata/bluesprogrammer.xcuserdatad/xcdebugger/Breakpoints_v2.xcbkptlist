@@ -49,38 +49,6 @@
             endingLineNumber = "49"
             landmarkName = "savePomodoro(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PomodoroApp.PomodoroViewController.savePomodoro (PomodoroApp.Sample) -&gt; ()"
-                  moduleName = "PomodoroApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///iOS%20Projects/Github%20repositories/PomodoroApp/PomodoroApp/PomodoroViewController.swift"
-                  timestampString = "525745390.542944"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "63">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PomodoroApp.PomodoroViewController.(savePomodoro (PomodoroApp.Sample) -&gt; ()).(closure #1)"
-                  moduleName = "PomodoroApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///iOS%20Projects/Github%20repositories/PomodoroApp/PomodoroApp/PomodoroViewController.swift"
-                  timestampString = "525745390.548467"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,13 +58,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PomodoroApp/PomodoroService.swift"
-            timestampString = "525755294.017728"
+            timestampString = "525756324.90665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "save(_:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomodoroApp/Services/PomodoroService.swift"
+            timestampString = "525764830.947173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "PomodoroService"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PomodoroApp/Services/PomodoroService.swift"
+            timestampString = "525764830.947173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "PomodoroService"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

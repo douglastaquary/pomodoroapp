@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+@available(iOS 10.0, *)
 class HistoryViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,15 +22,11 @@ class HistoryViewController: UIViewController {
     
     let headerCell = "HeaderCell"
     
-}
-
-
-
-extension HistoryViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loadPomodoros()
         
         self.navigationItem.title = "Pomodoro App"
         
@@ -38,15 +35,10 @@ extension HistoryViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        loadPomodoros()
-        
+        setUpView()
     }
     
-}
-
-
-extension HistoryViewController {
-
+    
     func loadPomodoros() {
         pomodoroService.fetch { [weak self] samples in
             self?.pomodoros = samples
@@ -54,22 +46,69 @@ extension HistoryViewController {
         
         tableView.reloadData()
     }
+    
+    
+    func setUpView() {
+        
+        let emptyBackground = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: tableView.frame.size.width))
+        
+        if !pomodoros[0].items.isEmpty {
+            
+            loadPomodoros()
+            
+            tableView.backgroundView = nil
+            tableView.isHidden = false
+            tableView.sectionHeaderHeight = 28
+            tableView.separatorStyle = .singleLine
+            
+        } else {
+            
+            emptyBackground.backgroundColor = .white
+            
+            tableView.sectionHeaderHeight = 0.0
+            tableView.separatorStyle = .none
+            
+            
+            let emptyText = UILabel(frame: CGRect(x: 100, y: 100, width: self.view.bounds.size.width, height: 100))
+            emptyText.translatesAutoresizingMaskIntoConstraints = false
+            
+            emptyText.text = "Start a pomodoro"
+            emptyText.textColor = .black
+            emptyText.layer.opacity = 0.5
+            emptyText.font = UIFont.systemFont(ofSize: 22, weight: UIFontWeightBold)
+            emptyBackground.addSubview(emptyText)
+
+            emptyText.centerYAnchor.constraint(equalTo: emptyBackground.centerYAnchor).isActive = true
+
+            emptyText.centerXAnchor.constraint(equalTo: emptyBackground.centerXAnchor).isActive = true
+
+            
+            tableView.backgroundView = emptyBackground
+            
+        }
+    }
+
+    
 }
 
 
+@available(iOS 10.0, *)
 extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pomodoros[section].items.count
     }
     
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return pomodoros[section].name
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HistoryViewCell
@@ -80,15 +119,13 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableCell(withIdentifier: headerCell) as! HistoryHeaderView
         
         headerView.setup(with: pomodoros[section].name)
         
         return headerView
-        
-        
-        
     }
     
 }

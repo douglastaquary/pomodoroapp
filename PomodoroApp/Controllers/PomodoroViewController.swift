@@ -7,12 +7,9 @@
 //
 
 import UIKit
+import AudioToolbox
 
-public protocol PomodoroViewControllerDelegate {
-    func didTapStartButton(last pomodoro: Pomodoro?)
-}
-
-
+@available(iOS 10.0, *)
 class PomodoroViewController: UIViewController {
     
     var count = 1500
@@ -21,45 +18,49 @@ class PomodoroViewController: UIViewController {
     
     var counting: Bool = false
 
-    let pomodoroService = PomodoroService()
+    var pomodoroService = PomodoroService()
     
     @IBOutlet weak var pomodoroImageView: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
-}
-
-
-extension PomodoroViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         timerLabel.text = "25:00"
         
+        setUpOpacityView(to: false)
+        
         startButton.addTarget(self,
                               action: #selector(PomodoroViewController.tapStartButton),
                               for: .touchUpInside)
     }
-}
-
-
-extension PomodoroViewController {
+    
+    
+    func setUpOpacityView(to opacity: Bool) {
+        pomodoroImageView.layer.opacity = opacity ? 1 : 0.5
+        startButton.layer.opacity = opacity ? 1 : 0.5
+    }
+    
     
     func savePomodoro(_ sample: Sample) {
         pomodoroService.save(sample) { (error) in
-            print("Error = \(error.debugDescription)")
+            print("Save")
         }
     }
+
 }
 
 
+@available(iOS 10.0, *)
 extension PomodoroViewController {
     
     func tapStartButton() {
-        
         if !counting {
             
             counting = true
+            
+            setUpOpacityView(to: counting)
             
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(PomodoroViewController.counter), userInfo: nil, repeats: true)
             
@@ -69,9 +70,12 @@ extension PomodoroViewController {
             
             counting = false
             
+            setUpOpacityView(to: counting)
+            
             timer.invalidate()
             
             startButton.setTitle("Start", for: .normal)
+
             
             let stoppedSample = Sample(newTimer: timerLabel.text ?? "",
                                        newState: "stopped")
@@ -85,6 +89,7 @@ extension PomodoroViewController {
 }
 
 
+@available(iOS 10.0, *)
 extension PomodoroViewController {
 
     //MARK: Counter
@@ -99,6 +104,8 @@ extension PomodoroViewController {
             
             let fineshedSample = Sample(newTimer: timerLabel.text ?? "",
                                        newState: "fineshed")
+            
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             
             savePomodoro(fineshedSample)
             

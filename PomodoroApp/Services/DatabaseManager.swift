@@ -10,9 +10,11 @@ import Foundation
 import CoreData
 
 
+@available(iOS 10.0, *)
 class DatabaseManager {
     
     // MARK: - Core Data stack
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "Pomodoro")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -25,7 +27,9 @@ class DatabaseManager {
     
     // MARK: - Core Data Saving support
     func saveContext () {
+        
         let context = persistentContainer.viewContext
+
         if context.hasChanges {
             do {
                 try context.save()
