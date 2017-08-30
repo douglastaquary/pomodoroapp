@@ -15,6 +15,7 @@ public struct Section {
 }
 
 
+@available(iOS 10.0, *)
 public struct PomodoroService: PomodoroRepository {
 
     public enum Error: Swift.Error {

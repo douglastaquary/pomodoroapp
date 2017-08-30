@@ -51,7 +51,7 @@ extension Date {
         let units = Set<Calendar.Component>([.year, .month, .day, .hour, .minute, .second, .weekOfYear])
         let components = Calendar.current.dateComponents(units, from: date, to: Date())
     
-        if components.day! > 0 {
+        if components.day! > 1 {
             return false
         }
         
